@@ -18,11 +18,11 @@ service:
 ingress:
   enabled: true
   ingressClassName: 'nginx'
-  hostname: 'd15.demo-project.xyz'
+  hostname: 'd17.demo-project.xyz'
 
 tlsCertificate:
   certificateEnabled: true
   issuerEnabled: true
   email: 'hiremostafa@gmail.com'
   organization: 'demo-project'
-  hostname: 'd15.demo-project.xyz'
+  hostname: 'd17.demo-project.xyz'
