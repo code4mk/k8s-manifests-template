@@ -2,7 +2,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: {{ .Values.projectName }}-certificate
+  name: {{ .Values.projectName }}
   namespace: {{ .Values.namespace }}
 spec:
   secretName: {{ .Values.projectName }}-tls
@@ -23,6 +23,6 @@ spec:
     - {{ .Values.tlsCertificate.hostname }}
   issuerRef:
     name: {{ .Values.projectName }}
-    kind: ClusterIssuer
+    kind: Issuer
     group: cert-manager.io
 {{- end }}

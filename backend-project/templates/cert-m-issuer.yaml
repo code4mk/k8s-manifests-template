@@ -1,8 +1,9 @@
 {{- if .Values.tlsCertificate.issuerEnabled -}}
 apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
+kind: Issuer
 metadata:
   name: {{ .Values.projectName }}
+  namespace: {{ .Values.namespace }}
 spec:
   acme:
     email: {{ .Values.tlsCertificate.email }}
