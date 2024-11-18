@@ -22,7 +22,7 @@ ingress:
 
 tlsCertificate:
   certificateEnabled: false
-  issuerEnabled: true
+  issuerEnabled: false
   email: 'hiremostafa@gmail.com'
   organization: 'demo-project'
   hostname: 'd17.demo-project.xyz'
